@@ -58,7 +58,7 @@ h1, h2 {
 
 .profile-header {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .profile-image {
@@ -88,11 +88,11 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap; /* allow wrapping onto multiple lines if needed */
+    flex-wrap: wrap;
 }
 
 .profile-header p a, .profile-header p span {
-    margin: 0 5px; /* add some space between items*/
+    margin: 0 5px;
     display: inline-flex;
     align-items: center;
 }
@@ -102,15 +102,15 @@ a:hover {
 }
 
 .profile-header p a[href^="mailto:"]::before {
-    content: "✉️"; /* email icon */
+    content: "✉️";
 }
 
 .profile-header p a[href^="https://www.linkedin.com"]::before {
-    content: "🔗"; /* link icon */
+    content: "🔗";
 }
 
 .profile-header p span::before {
-    content: "📞"; /* phone icon */
+    content: "📞";
 }
 
 /* Experience styling */
@@ -175,6 +175,24 @@ a:hover {
 }
 
 .bracket-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Projects style */
+.project-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+}
+
+.project-title {
+    font-weight: bold;
+    color: #6d4c41;
+    margin-bottom: 5px;
+}
+
+.project-description ul {
     list-style-type: disc;
     padding-left: 20px;
 }
